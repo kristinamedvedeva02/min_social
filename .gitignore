@@ -1,0 +1,7 @@
+venv
+pycache
+__pycache__
+env
+clownfile.py
+settings.py
+migrations

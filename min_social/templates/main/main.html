@@ -1,0 +1,34 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en"> 
+
+ <head> 
+
+  <meta charset="UTF-8"> 
+
+  <title>Home Page</title> 
+
+    <link rel="stylesheet" href="">
+  <style>
+
+  </style>
+ </head> 
+
+ <body> 
+
+    {% if users %}
+        {% for user in users %}
+            <div class="alert alert-warning mt-2 ">
+                <h3>{{ user.username }}</h3>
+                <p>New clown!!!</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No clowns</p>
+    {% endif %}
+
+
+ </body>
+
+</html>
