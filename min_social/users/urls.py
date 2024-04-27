@@ -10,7 +10,7 @@ routers.register(r'users', views.UserViewSet)
 urlpatterns = [
     path('registration', views.registration, name = 'registration'),
     path('authentification', views.user_login , name = 'authentification'),
-    path('profile', profile_pole, name = 'profile'),
-    path('', views.home_page, name = 'home_page'),
+    path('', views.index, name = 'index'),
     path('', include(routers.urls)),          #!!!
+    path('about', views.about, name = 'about'),
 ]
