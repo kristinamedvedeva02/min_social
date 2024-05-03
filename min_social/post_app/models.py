@@ -14,7 +14,7 @@ class Company(models.Model):
 
 
 class Office(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     description = models.TextField(max_length=200, blank=True)
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
 
